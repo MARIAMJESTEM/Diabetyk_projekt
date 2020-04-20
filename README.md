@@ -3,33 +3,33 @@
 ## Projekt : ” Dziennik diabetyka”
  
 ## Funkcjonalności aplikacji:
-*Dodanie nowej pozycji poziomu cukru.
-*Wyszukanie pomiaru po dacie lub wartości .
-*Zapis i wczytywanie pomiarów przy zamknięciu/otwarciu programu.
-*Zapis pomiarów do pliku pod zadaną ścieżkę.
-*Statystyka pomiarów.
-*Jedna zaproponowane przez grupę.
+* Dodanie nowej pozycji poziomu cukru.
+* Wyszukanie pomiaru po dacie lub wartości .
+* Zapis i wczytywanie pomiarów przy zamknięciu/otwarciu programu.
+* Zapis pomiarów do pliku pod zadaną ścieżkę.
+* Statystyka pomiarów.
+* Jedna zaproponowane przez grupę.
  
 ## Założenia Projektu : 
 Wykonanie aplikacji która pomoże ludziom chorym monitorować poziom cukru we krwi na przestrzeni czasu oraz przyswojenie technik organizacji pracy w zespole za pomocą aplikacji takich jak Trello, GitHub oraz Google Dysk.
 
 
 ## Czynności do wykonania :
-*Zapoznanie się z problematyką projektu
-*Dostosowanie środowisk do pracy grupowej
-*Przypomnienie sobie środowiska jakim jest  Python i nauka programowania strukturalnego
-*Podział pracy w grupie
-*Wspólne analizowanie wykonanych zadań
-*Połączenie zebranych materiałów 
+* Zapoznanie się z problematyką projektu
+* Dostosowanie środowisk do pracy grupowej
+* Przypomnienie sobie środowiska jakim jest  Python i nauka programowania strukturalnego
+* Podział pracy w grupie
+* Wspólne analizowanie wykonanych zadań
+* Połączenie zebranych materiałów 
 
 
 
 ## Propozycje dodatkowej funkcji :
-*Przypomnienia o pomiarze
-*Ostrzeganie przy wejściu do aplikacji o wyższych ostatnio poziomach cukru
-*Podświetlanie niepokojących statystyk
-*Możliwość przesyłania statystyk np. do lekarza
-*Interpretowanie wyniku na bieżąco ( np. stan wyższego ryzyka itd. )
+* Przypomnienia o pomiarze
+* Ostrzeganie przy wejściu do aplikacji o wyższych ostatnio poziomach cukru
+* Podświetlanie niepokojących statystyk
+* Możliwość przesyłania statystyk np. do lekarza
+* Interpretowanie wyniku na bieżąco ( np. stan wyższego ryzyka itd. )
 
 ## Wstępny szkielet programu:
 main(){
