@@ -31,16 +31,17 @@ Wykonanie aplikacji która pomoże ludziom chorym monitorować poziom cukru we k
 
 ## Wstępny szkielet programu:
 ```
-main(){
-	  wczytywanie danych zapisanych z ostatnich pomiarów()
-	  ostrzeżenie()
-  Menu(){ 
+main()
+{
+    wczytywanie danych zapisanych z ostatnich pomiarów()
+    ostrzeżenie()
+    Menu(){ 
   
-    Dodaj pomiar()
-    Wyszukaj pomiar()
-    Zobacz statystyki()
-    Eksportuj dane()
-    Wyjście
+        Dodaj pomiar()
+        Wyszukaj pomiar()
+        Zobacz statystyki()
+        Eksportuj dane()
+        Wyjście
   }
 }
 ```
