@@ -14,12 +14,12 @@ Wykonanie aplikacji która pomoże ludziom chorym monitorować poziom cukru we k
 
 
 ## Czynności do wykonania :
-* Zapoznanie się z problematyką projektu
-* Dostosowanie środowisk do pracy grupowej
-* Przypomnienie sobie środowiska jakim jest  Python i nauka programowania strukturalnego
-* Podział pracy w grupie
-* Wspólne analizowanie wykonanych zadań
-* Połączenie zebranych materiałów 
+1. Zapoznanie się z problematyką projektu
+2. Dostosowanie środowisk do pracy grupowej
+3. Przypomnienie sobie środowiska jakim jest  Python i nauka programowania strukturalnego
+4. Podział pracy w grupie
+5. Wspólne analizowanie wykonanych zadań
+6. Połączenie zebranych materiałów 
 
 
 ## Propozycje dodatkowej funkcji :
