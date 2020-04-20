@@ -34,6 +34,7 @@ main(){
 	  wczytywanie danych zapisanych z ostatnich pomiarów()
 	  ostrzeżenie()
   Menu(){ 
+  
     Dodaj pomiar()
     Wyszukaj pomiar()
     Zobacz statystyki()
