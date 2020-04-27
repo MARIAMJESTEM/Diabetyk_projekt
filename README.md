@@ -60,7 +60,7 @@ Dostaliśmy także materiały pomocne do wykonania projektu:
 
 [GitHub](https://education.github.com/)
 
-[Pandas](https://pandas.pydata.org/)
+[Pandas](https://pandas.pydata.org/) W celu pobrania "pip install pandas"
 
 [Matplotlib](https://matplotlib.org/)
 
