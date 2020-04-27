@@ -58,8 +58,12 @@ Po konsultacji z prowadzącym zespołu projektowego ustaliliśmy następujące r
 
 Dostaliśmy także materiały pomocne do wykonania projektu:
 [GitHub](https://education.github.com/)
+
 [Pandas](https://pandas.pydata.org/)
+
 [Matplotlib](https://matplotlib.org/)
+
 [Pygame](https://www.pygame.org/docs/tut/PygameIntro.html)
+
 [Panda- Youtube tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS&fbclid=IwAR1Mxve1U8rP_K5AgiFMHl2ibu0ewacf0OmPhqwkSTD1wvaFwvuhyfP4sHo)
 
