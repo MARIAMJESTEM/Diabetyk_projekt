@@ -57,6 +57,7 @@ Po konsultacji z prowadzącym zespołu projektowego ustaliliśmy następujące r
 * Ostateczny wybór TUI przy wsparciu             pygames 
 
 Dostaliśmy także materiały pomocne do wykonania projektu:
+
 [GitHub](https://education.github.com/)
 
 [Pandas](https://pandas.pydata.org/)
