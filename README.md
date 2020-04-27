@@ -58,7 +58,7 @@ Po konsultacji z prowadzącym zespołu projektowego za pomocą MSTeams ustalili�
 * Będziemy spotykać się w każdy poniedziałek i tworzyć notatki ze spotkań
 
 
-Dostaliśmy także materiały pomocne do wykonania projektu:
+Dostaliśmy także materiały pomocnicze do wykonania projektu:
 
 [GitHub](https://education.github.com/)
 
