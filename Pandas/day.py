@@ -27,6 +27,14 @@ def new_position():
     append_list_as_row('dane.csv', new_row)
 
     print('Twoja wartość cukru została dodana!')
+
+    if new_measure < 100:
+        print('Prawidłowy poziom cukru')
+    elif new_measure >= 100 and new_measure <= 125:
+        print('Podwyższony poziom cukru. Musisz uważać!')
+    elif new_measure > 125:
+        print('Zbyt wysoki poziom cukru')
+
     return 0
 
 def plot():
@@ -55,10 +63,22 @@ def old_measure():
         print('Podałeś złą wartość')
     return 0
 
+def warning():
+    positive_result = 0
+    for i in range(1, 4):
+        if document.iloc[-i, 1] > 125:
+            continue
+        else:
+            positive_result = 1
+            break
+    if positive_result == 0:
+        print('!!! W ciągu ostatnich trzech dni Twój poziom cukru był zbyt wysoki. Powinieneś skontaktować się z lekarzem !!!')
+
 
 
 def  main(args):
     print('Witaj w dzienniku diabetyka!')
+    warning()
     wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz opuścić program"))
     if wybor == 1:
        print("Tearaz dodamy nowa pozycję cukru")
