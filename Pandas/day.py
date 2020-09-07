@@ -9,6 +9,8 @@ from csv import writer
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+from os import system, name
+from time import sleep
 
 document = pd.read_csv('dane.csv')
 
@@ -35,6 +37,8 @@ def new_position():
     elif new_measure > 125:
         print('Zbyt wysoki poziom cukru')
 
+    sleep(6)
+    system("cls")
     return 0
 
 def plot():
