@@ -65,6 +65,9 @@ def old_measure():
         print(document[filt_secound])
     else:
         print('Podałeś złą wartość')
+
+    sleep(10)
+    system("cls")
     return 0
 
 def warning():
@@ -86,11 +89,18 @@ def  main(args):
     wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz opuścić program"))
     if wybor == 1:
        print("Tearaz dodamy nowa pozycję cukru")
+       sleep(2)
+       system("cls")
        new_position()
+
     elif wybor == 2:
+        sleep(2)
+        system("cls")
         old_measure()
     elif wybor == 3:
         print("Teraz zobaczymy wykres naszych danych od czasu ich dodawania")
+        sleep(2)
+        system("cls")
         plot()
     elif wybor == 4:
         print("Do zobaczenia wkrótce!")
