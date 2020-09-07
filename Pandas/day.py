@@ -32,7 +32,7 @@ def new_position():
 
     if new_measure < 100:
         print('Prawidłowy poziom cukru')
-    elif new_measure >= 100 and new_measure <= 125:
+    elif 100 <= new_measure <= 125:
         print('Podwyższony poziom cukru. Musisz uważać!')
     elif new_measure > 125:
         print('Zbyt wysoki poziom cukru')
@@ -51,10 +51,14 @@ def plot():
     plt.ylabel('Wartość pomiaru cukru')
     plt.show()
     print(x)
+
+    system("cls")
     return 0
 
 def old_measure():
     choice = int(input('Wybierz: \n 1. Jeśli chcesz wyszukać po dacie\n 2. Jeśli chcesz wyszukać po wartości pomiaru'))
+    sleep(1)
+    system("cls")
     if choice == 1:
         old_data = int(input('Podaj datę w formacie YYYY-MM-DD z której pomiar  chcesz wyszukać'))
         filt_first = (document['data']== old_data)
@@ -66,7 +70,7 @@ def old_measure():
     else:
         print('Podałeś złą wartość')
 
-    sleep(10)
+    sleep(6)
     system("cls")
     return 0
 
@@ -83,31 +87,36 @@ def warning():
 
 
 
-def  main(args):
-    print('Witaj w dzienniku diabetyka!')
-    warning()
-    wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz opuścić program"))
-    if wybor == 1:
-       print("Tearaz dodamy nowa pozycję cukru")
-       sleep(2)
-       system("cls")
-       new_position()
+def  menu(args):
+    while True:
+        print('Witaj w dzienniku diabetyka!')
+        warning()
+        wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz opuścić program"))
+        if wybor == 1:
+           print("Teraz dodamy nowa pozycję cukru")
+           sleep(1)
+           system("cls")
+           new_position()
+        elif wybor == 2:
+            sleep(1)
+            system("cls")
+            old_measure()
+        elif wybor == 3:
+            print("Teraz zobaczymy wykres naszych danych od czasu ich dodawania")
+            sleep(1)
+            system("cls")
+            plot()
+        elif wybor == 4:
+            print("Do zobaczenia wkrótce!")
+            sys.exit(0)
+        else:
+            print('Nie podałeś poprawnej wartości, spróbuj ponownie uruchomic program')
 
-    elif wybor == 2:
-        sleep(2)
-        system("cls")
-        old_measure()
-    elif wybor == 3:
-        print("Teraz zobaczymy wykres naszych danych od czasu ich dodawania")
-        sleep(2)
-        system("cls")
-        plot()
-    elif wybor == 4:
-        print("Do zobaczenia wkrótce!")
-        sys.exit(0)
-    else:
-        print('Nie podałeś poprawnej wartości, spróbuj ponownie uruchomic program')
-        
+    return 0
+
+def main(args):
+    menu(args)
+
     return 0
 if __name__ == '__main__':
     import sys
