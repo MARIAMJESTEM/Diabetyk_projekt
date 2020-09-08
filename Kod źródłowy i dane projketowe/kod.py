@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from os import system, name
 from time import sleep
+from shutil import copyfile
+import os
 
 document = pd.read_csv('dane.csv')
 
@@ -85,13 +87,22 @@ def warning():
     if positive_result == 0:
         print('!!! W ciągu ostatnich trzech dni Twój poziom cukru był zbyt wysoki. Powinieneś skontaktować się z lekarzem !!!')
 
-
+def zapis():
+    sciezka = input('Podaj dokładną ścieżkę do pliku z rozszerzeniem csv do którego chcesz zapisac dotychczasowe dane(ma to być ścieżka do katalogu i nazwa nowego pliku): ')
+    if not os.path.isfile(sciezka):
+        f = open(sciezka, "w")
+    copyfile( 'dane.csv', sciezka)
+    print('Utworzyłeś nowy plik z danymi!')
+    sleep(6)
+    system("cls")
+    return 0
+    
 
 def  menu(args):
     while True:
         print('Witaj w dzienniku diabetyka!')
         warning()
-        wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz opuścić program"))
+        wybor=int(input("Wybierz:\n 1 jeśli chcesz dodać nową pozycje poziomu cukru \n 2 jeśli chcesz zobaczyć starszą pozycję \n 3 jesli chcesz zobaczyć wykres zależności poziomu cukru od daty \n 4 jesli chcesz zapisać dane w nowym pliku \n 5 jesli chcesz opuścić program"))
         if wybor == 1:
            print("Teraz dodamy nowa pozycję cukru")
            sleep(1)
@@ -107,6 +118,11 @@ def  menu(args):
             system("cls")
             plot()
         elif wybor == 4:
+            print("Zapiszemy dotychczasowe dane w nowym pliku")
+            sleep(1)
+            system("cls")
+            zapis()
+        elif wybor == 5:
             print("Do zobaczenia wkrótce!")
             sys.exit(0)
         else:
