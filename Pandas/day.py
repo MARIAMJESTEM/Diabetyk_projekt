@@ -45,7 +45,7 @@ def plot():
     count_row = document.shape[0]
     x = document.loc[0:count_row,'data']
     y = document.loc[0:count_row,'pomiar']
-    plt.plot(x, y)
+    plt.bar(x, y)
     plt.title('Wykres zależności pomiaru od daty')
     plt.xlabel('Data pomiaru')
     plt.ylabel('Wartość pomiaru cukru')
@@ -60,7 +60,7 @@ def old_measure():
     sleep(1)
     system("cls")
     if choice == 1:
-        old_data = int(input('Podaj datę w formacie YYYY-MM-DD z której pomiar  chcesz wyszukać'))
+        old_data = str(input('Podaj datę w formacie YYYY-MM-DD z której pomiar  chcesz wyszukać'))
         filt_first = (document['data']== old_data)
         print(document[filt_first])
     elif choice == 2:
